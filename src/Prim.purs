@@ -22,6 +22,9 @@ import Prim ()
 foreign import data Function :: * -> * -> *
 
 -- | A JavaScript Array.
+-- |
+-- | Construct values using literals:
+-- | * `x = [1,2,3,4,5] :: Array Int`
 foreign import data Array :: * -> *
 
 -- | A JavaScript Object.
@@ -54,7 +57,7 @@ foreign import data Number :: *
 -- | which is guaranteed to contain one character by use of the type system.
 -- |
 -- | Construct values of this type with literals, using single quotes `'`:
--- | * `x = '0'`
+-- | * `x = '0' :: Char`
 foreign import data Char :: *
 
 -- | A JavaScript String.
