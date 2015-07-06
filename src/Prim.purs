@@ -45,8 +45,8 @@ foreign import data Int :: *
 -- | * `z = 1.224e6 :: Number`
 foreign import data Number :: *
 
--- | A single character. The JavaScript representation is a normal String with
--- | a single character.
+-- | A single character. The JavaScript representation is a normal String,
+-- | which is guaranteed to contain one character by use of the type system.
 -- |
 -- | Construct values of this type with literals, using single quotes `'`:
 -- | * `x = '0'`
