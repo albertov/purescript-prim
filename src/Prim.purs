@@ -1,3 +1,6 @@
+-- | The Prim module is embedded in the PureScript compiler, in order to
+-- | provide compiler support for certain types &mdash; for example, value
+-- | literals, or syntax sugar.
 module Prim where
 
 -- | A JavaScript function, which takes values of the first type, and
