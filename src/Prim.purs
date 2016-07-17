@@ -29,15 +29,15 @@ foreign import data Array :: * -> *
 
 -- | A JavaScript Object.
 -- |
--- | The type signature here means that the `Object` type constructor takes
+-- | The type signature here means that the `Record` type constructor takes
 -- | a row of concrete types. For example:
 -- |
--- | * `type Person = Object (name :: String, age :: Number)`
+-- | * `type Person = Record (name :: String, age :: Number)`
 -- |
 -- | The syntactic sugar with curly braces `{ }` is generally preferred:
 -- |
 -- | * `type Person = { name :: String, age :: Number }`
-foreign import data Object :: # * -> *
+foreign import data Record :: # * -> *
 
 -- | A JavaScript 32-bit signed integer. See the purescript-integers package
 -- | for more details.
